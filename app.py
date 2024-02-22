@@ -26,7 +26,7 @@ if scatter_button:
     st.write('Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
     
     # Crear un gráfico de dispersión
-    fig_scatter = px.scatter(car_data, x="year", y="price", color="fuelType", size="mileage",
+    fig_scatter = px.scatter(car_data, x="model_year", y="price", color="fuelType", size="mileage",
                              hover_name="make", title="Gráfico de Dispersión")
     
     # Mostrar un gráfico Plotly interactivo
